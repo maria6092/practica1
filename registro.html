@@ -4,78 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Juegosdechicas.com | Registro</title>
-  <link rel="stylesheet" href="pro.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div class="pagina-pro">
+  <div class="pagina">
 
     <header class="cab">
-      <a class="cab__logo" href="index.html">
-        <div class="gif-slot gif-slot--boton" data-gif="img/gifs/gato.gif" aria-hidden="true"><span class="gif-slot__ph">GIF</span></div>
+      <a class="cab-logo" href="index.html">
+        <div class="gif-slot gif-boton" data-gif="img/gifs/gato.gif"><span class="gif-ph">GIF</span></div>
         <span>
-          <span class="cab__nombre">Juegos de chicas.com</span>
-          <span class="cab__lema">La página web de los mejores juegos para chicas</span>
+          <span class="cab-nombre">Juegos de chicas.com</span>
+          <span class="cab-lema">La página web de los mejores juegos para chicas</span>
         </span>
       </a>
-      <div class="gif-slot gif-slot--sticker" data-gif="img/gifs/chica.gif" aria-hidden="true"><span class="gif-slot__ph">GIF</span></div>
+      <div class="gif-slot gif-sticker" data-gif="img/gifs/chica.gif"><span class="gif-ph">GIF</span></div>
     </header>
 
-    <nav class="menu" aria-hidden="true">
-      <span class="menu__activa">Inicio</span><span>Juegos</span><span>Clasificación</span><span>Videos</span><span>Amigos</span>
+    <nav class="menu">
+      <span class="menu-activa">Inicio</span><span>Juegos</span><span>Clasificación</span><span>Videos</span><span>Amigos</span>
     </nav>
 
-    <div class="marquesina" aria-hidden="true">
+    <div class="marquesina">
       <span>★ ¡Bienvenid@s a juegosdechicas.com!  ★  La MEJOR página web de juegos para chicas  ★</span>
     </div>
 
-    <p class="ruta" aria-hidden="true">Inicio &gt; Registro</p>
+    <p class="ruta">Inicio &gt; Registro</p>
 
     <div class="cuerpo">
 
       <main class="principal">
 
-        <section class="ventana" aria-labelledby="titulo-registro">
-          <div class="ventana__barra">
-            <h1 id="titulo-registro">Crear cuenta</h1>
-            <span class="ventana__botones" aria-hidden="true"><i>_</i><i>&#9633;</i><i>x</i></span>
+        <section class="ventana">
+          <div class="ventana-barra">
+            <h1>Crear cuenta</h1>
+            <span class="ventana-botones"><i>_</i><i>&#9633;</i><i>x</i></span>
           </div>
-          <div class="ventana__cuerpo">
+          <div class="ventana-cuerpo">
             <form id="form-registro" novalidate>
 
               <div class="campo" id="campo-nick">
                 <label for="nick">Nombre:</label>
-                <input type="text" id="nick" name="nick" autocomplete="nickname" maxlength="16" placeholder="tu_nombre_de_usuario" aria-describedby="error-nick" required>
-                <p class="mensaje-error" id="error-nick" aria-live="polite"></p>
+                <input type="text" id="nick" name="nick" maxlength="16" placeholder="tuNombre" required>
+                <p class="mensaje-error" id="error-nick"></p>
               </div>
 
               <div class="campo" id="campo-email">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" autocomplete="email" placeholder="tuemail@hotmail.com" aria-describedby="error-email" required>
-                <p class="mensaje-error" id="error-email" aria-live="polite"></p>
+                <input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required>
+                <p class="mensaje-error" id="error-email"></p>
               </div>
 
               <div class="campo" id="campo-password">
                 <label for="password">Contraseña:</label>
-                <div class="campo__fila">
-                  <input type="password" id="password" name="password" autocomplete="new-password" aria-describedby="requisitos error-password" required>
-                  <button type="button" class="ver-password" aria-pressed="false" aria-controls="password">Mostrar</button>
+                <div class="campo-fila">
+                  <input type="password" id="password" name="password" required>
+                  <button type="button" class="ver-password">Mostrar</button>
                 </div>
-                <ul class="requisitos" id="requisitos" aria-label="Requisitos de la contraseña">
+                <ul class="requisitos" id="requisitos">
                   <li data-requisito="longitud">8 caracteres mínimo</li>
                   <li data-requisito="mayuscula">Una letra mayúscula</li>
                   <li data-requisito="minuscula">Una letra minúscula</li>
                   <li data-requisito="numero">Un número</li>
                 </ul>
-                <p class="mensaje-error" id="error-password" aria-live="polite"></p>
+                <p class="mensaje-error" id="error-password"></p>
               </div>
 
               <div class="campo" id="campo-repetir">
                 <label for="repetir">Repetir contraseña:</label>
-                <input type="password" id="repetir" name="repetir" autocomplete="new-password" aria-describedby="error-repetir" required>
-                <p class="mensaje-error" id="error-repetir" aria-live="polite"></p>
+                <input type="password" id="repetir" name="repetir" required>
+                <p class="mensaje-error" id="error-repetir"></p>
               </div>
 
-              <div class="mensaje-general" id="mensaje-general" role="status" aria-live="polite" hidden></div>
+              <div class="mensaje-general" id="mensaje-general" hidden></div>
 
               <button type="submit" class="boton" id="btn-registro">Crear cuenta</button>
             </form>
@@ -84,41 +85,41 @@
           </div>
         </section>
 
-        <section class="bienvenida" aria-labelledby="titulo-bienvenida">
-          <h2 id="titulo-bienvenida">Únete a juegosdechicas.com</h2>
+        <section class="bienvenida">
+          <h2>Únete a juegosdechicas.com</h2>
           <p>Crea tu cuenta gratis, juega a los mejores juegos y compite para entrar en el Top 8 de la temporada 2026/27.</p>
-          <div class="bienvenida__fila" aria-hidden="true">
-            <div class="gif-slot gif-slot--cuadrado" data-gif="img/gifs/estrellamorada.gif"><span class="gif-slot__ph">GIF</span></div>
-            <div class="gif-slot gif-slot--cuadrado" data-gif="img/gifs/ordenador.gif"><span class="gif-slot__ph">GIF</span></div>
-            <div class="gif-slot gif-slot--cuadrado" data-gif="img/gifs/estrellamorada.gif"><span class="gif-slot__ph">GIF</span></div>
+          <div class="bienvenida-fila">
+            <div class="gif-slot gif-cuadrado" data-gif="img/gifs/estrellamorada.gif"><span class="gif-ph">GIF</span></div>
+            <div class="gif-slot gif-cuadrado" data-gif="img/gifs/ordenador.gif"><span class="gif-ph">GIF</span></div>
+            <div class="gif-slot gif-cuadrado" data-gif="img/gifs/estrellamorada.gif"><span class="gif-ph">GIF</span></div>
           </div>
         </section>
 
       </main>
 
-      <aside class="lateral" aria-label="Sobre la comunidad">
+      <aside class="lateral">
 
-        <section class="caja" aria-labelledby="titulo-ventajas">
-          <h2 class="caja__titulo" id="titulo-ventajas">¿Por qué unirte? </h2>
-          <div class="caja__cuerpo">
-            <p>Con tu cuenta puedes guardar tu progreso, competir en el Top 8 y añadir a tus amigas.</p>
-            <div class="gif-slot gif-slot--cuadrado" data-gif="img/gifs/gatoarcoiris.gif" aria-hidden="true"><span class="gif-slot__ph">GIF</span></div>
+        <section class="caja">
+          <h2 class="caja-titulo">¿Por qué unirte?</h2>
+          <div class="caja-cuerpo">
+            <p>Con tu cuenta puedes guardar tu progreso, competir en el Top 8 y añadir a tus amigas y amigos.</p>
+            <div class="gif-slot gif-cuadrado" data-gif="img/gifs/gatoarcoiris.gif"><span class="gif-ph">GIF</span></div>
           </div>
         </section>
 
-        <section class="caja" aria-labelledby="titulo-consejo">
-          <h2 class="caja__titulo" id="titulo-consejo">Consejo del día</h2>
-          <div class="caja__cuerpo">
+        <section class="caja">
+          <h2 class="caja-titulo">Consejo del día</h2>
+          <div class="caja-cuerpo">
             <p>Elige un nombre que te represente: será lo primero que vean las demás jugadoras en la clasificación.</p>
-            <div class="gif-slot gif-slot--cuadrado gif-cargado" aria-hidden="true"><img src="img/registro.jpg" alt="Registro"></div>
+            <div class="gif-slot gif-cuadrado gif-cargado"><img src="img/registro.jpg" alt="Registro"></div>
           </div>
         </section>
 
       </aside>
     </div>
 
-    <footer class="pie-pro">
-      <div class="gif-slot gif-slot--completo" data-gif="img/gifs/linea.gif" aria-hidden="true"><span class="gif-slot__ph">GIF</span></div>
+    <footer class="pie">
+      <div class="gif-slot gif-completo" data-gif="img/gifs/linea.gif"></div>
       <p>Juegos de chicas.com</p>
     </footer>
   </div>
